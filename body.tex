@@ -1,0 +1,167 @@
+%for reference to this section
+\section{Introduction}
+\label{section:Introduction}
+Eye tracking is a method where someone's eyes and their movement are being recorded. Consequently, the measured results reveal where a person is looking at all times and how fast the eyes move between two points \autocite[]{poole2006eye}. To implement this, an eye tracking device is needed. There are two different kinds of eye tracking devices, head-mounted and remote. The first one gets placed on someone's head and requires contact. The second one is mostly put on top of or next to the computer screen. 
+Nowadays it is a common practice for web developers to use eye tracking as a tool to improve their applications, websites and its usability \autocite[]{buscher2009you}.\\
+
+This thesis will explore the usage of eye tracking in regard to the user experience for websites and web applications. Specifically, this paper will point out the advantages that come with using an eye tracker and the data that can be gained when it comes to information processing and search engines. 
+
+\section{Reading}
+\label{section:Reading}
+
+\subsection{Eye}
+\label{subsection:Eye}
+
+\subsubsection{Physiological}
+
+\subsubsection{Movements}
+
+\subsection{Information Processing}
+\label{subsection:InformationProcessing}
+
+\subsection{Differences between German and English}
+\label{subsection:Differences}
+
+\section{Eye Tracking}
+\label{section:EyeTracking}
+When an eye tracking device is being used, someone's eye movements are being recorded. This recorded material, raw eye tracking data, can be evaluated and the resulting parameters (e.g., fixation, saccades, regression, etc.) can be put into visualization graphs. Eye tracking can be a valuable tool in many application cases \autocite[]{goldberg2002eye, poole2006eye, beymer2007eye}.
+
+\selectlanguage{english}
+\begin{quote}
+``Eye tracking has been used for nearly one hundred years in psychology.''
+\autocite[1]{schiessl2003eye}
+\end{quote}
+
+But psychology is not the only research field where an eye tracking device can be useful. \textcite[]{buscher2009you} note in their paper that web developers can also profit from taking eye tracking study results into consideration when designing and styling their new websites. 
+
+When it comes to online reading, eye tracking has been a helpful expedient to gain information on how the human brain processes information retrieved from a text \autocite[]{schiessl2003eye}.
+
+As a result, the following section will include the most popular technologies, parameters and accordingly the required visualization methods. 
+
+
+
+
+\subsection{Technologies}
+\label{subsection:Technologies}
+
+\subsubsection{Head-mounted vs. remote}
+To record a subject's eye movements, there are two possible kinds of eye tracking devices available. The first one is called head-mounted. This kind of apparatus is placed on the subject's head and therefore always requires contact. 
+The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}.\\
+Although these two possibilities may sound like there is still room for improvement, the eye tracking devices have come a long way since the early beginnings. Earlier, direct contact with the cornea was necessary as \textcite[]{jacob2003eye} mention in their paper.
+
+
+\subsubsection{Infrared light - bright and dark pupil}
+While using a remote eye tracking device to record someone's eye movements, the camera most likely uses infrared light as an illuminator. Thus, the light hits the back of the eye which is also called the cornea. 
+Thus, the light hits the back of the eye which is also called the cornea. Moreover, the reason why the infrared light is used instead of any other light source is that it would distract the user while viewing the test material \autocite[]{poole2006eye}.
+The two most relevant arrangements are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the infrared light placed on a different axis as the camera recording the eye. That leads to the pupils being darker. 
+Sometimes these two methods can be used within the same eye tracking device which can lead to improved results \autocite[]{tobii2018dark, goldberg2002eye}.
+
+
+\subsection{Parameters}
+\label{subsection:Parameters}
+When an eye tracking device records a subject's eye movements raw data, for example, gaze points can be collected. To extract valuable and applicable information out of the obtained raw data, \textcite[]{blascheck2014state}  suggests to aggregate it into fixations and saccades. 
+Nowadays those are the two most commonly used parameters.
+Thus, this section will provide a brief overview of the most essential and relevant parameters.
+
+
+\subsubsection{Fixations}
+A fixation is understood as a steady gaze at one point \autocite[]{buscher2009you}.  In the context of reading \textcite[]{beymer2007eye} suggests fixations are moments where the gaze is paused on a word or a group of words. 
+Normally a fixations duration lasts about 200-300 ms \autocite[]{kasneci2015online}. As stated by \textcite[]{buscher2009you}, to be considered a fixation the gaze must at least last 80-100 ms. Accordingly, during that time the brain can process the ingested information. Aside from that, the field where many foveal fixations take place is called an area of interest \autocite[]{djamasbi2014eye}.\\
+According to \textcite[]{grzyb2016eye} not all recorded fixations are also detected correctly by the user of a website. For instance \textcite[]{bruneau2002eyes} states in his paper, that not all eye movements seem to happen voluntarily. 
+Despite the fact that fixations may not be an entirely flawless eye tracking parameter, \textcite[]{biedert2010eyebook} mention in their paper that information can only be correctly discovered with fixations.
+
+\subsubsection{Saccades}
+Another significant parameter is the saccade which is the counterpart to fixations. They are short and fast movements between two points, the before mentioned fixations. Saccades are the quickest movements the body is able to achieve and typically last 30 to 80 ms \autocite[]{blascheck2014state}. \\
+Furthermore, the scanpath is an important metric in terms of fixations and saccades. Scanpaths consist of alternating saccades and fixations. They reveal information about where the user looks first because scanpaths gives information in which order they look at what part of a website. Therefore it can offer insights into a user's experience and additionally their behavior when they observe or interact with a website \autocite[]{lorigo2008eye, blascheck2014state}.\\
+In the context of reading on a website, a saccade is habitually a forward movement for around 8-12 characters in the text that is being read as \textcite[]{beymer2007eye} are explaining in their paper.
+
+\subsubsection{Regressions}
+Saccades are usually only forward movements, hence fast backward movements are called regressions \autocite[]{reichle1998toward}. 
+\textcite[]{rayner1998eye} claims in his paper that regressions add up to 10 - 15 \% of the before mentioned saccades.
+While reading a passage of a text, regressions are movements to the left of the line, mostly a few characters back, sometimes earlier words or occasionally even a whole sentence. Therefore \textcite[]{kruger2014subtitles} suggest in their paper that this could be an indicator of having troubles in processing the reading material or merely just oculomotor errors. Although most of the times the reader is not aware of those movements \autocite[]{reichle2003ez, biedert2010eyebook}.
+
+\subsubsection{Pupil size}
+One of the main reasons why someone's pupil size may change is increasing or decreasing illumination. For example, an eye tracking study can include videos or something else that is presented to the subject. If that happens, brightness may change very often in the shown material. As a consequence, the pupil size is constantly altering. To reestablish a more constant pupil size, the brightness of the room can be adjusted \autocite[]{goldberg2002eye}.
+
+\selectlanguage{english}
+\begin{quote}
+``Pupil dilation is a measure that is typically used to indicate an individual’s arousal or interest in the viewed content matter, with a larger diameter reflecting greater arousal.''
+\autocite[3]{joachims2017accurately}
+\end{quote}
+
+Some may argue that pupil dilation as a parameter can be an unreliable source. 
+Because not only the text but every little detail goes into one's reading experience. For example, sudden sounds in the surrounding area can play a part in one's change of pupil size when reading a text. 
+Despite that, pupil dilation in a controlled environment, regarding time and space, can still say a lot about a user's experience on a website \autocite[]{bruneau2002eyes}.
+
+\subsection{Results and Visualization}
+\label{subsection:ResultsVisualization}
+Once the eye movements of a person got recorded, the raw eye tracking data can be further processed. There are different methods to visualize the various eye tracking parameters. This following section will address today's most commonly used techniques and try to gauge which one is the most efficient.
+
+\subsubsection{Statistical visualization approach}
+The first approach for visualizing data are commonly used methods in statistics. Raw eye tracking is primarily nothing more than mathematical coordinates. In addition to that, the raw data can contain information about the position of a user's head \autocite[]{bruneau2002eyes, biedert2010eyebook, kurzhals2016gaze}. 
+As \textcite[]{blascheck2014state} states in her paper, these statistical approaches are not exclusively constructed for eye tracking data. There are the three following alternatives to visualize the data: line chart, bar chart and scatter plot. The first one is the line chart which mostly displays mini-movements, slides, saccades or the mean time of fixations. The second is a bar chart which is typically used in the form of a histogram where the mean fixation duration is portrayed. And the third and last one is called a scatter plot which often illustrates saccadic movements \autocite[]{blascheck2014state}.
+As mentioned before, these three graphs are not explicitly made to visualize eye-tracking data, therefore not the best option to visualize these specific results.
+
+
+\subsubsection{Heat maps}
+Secondly, when it comes to visualizing the results of the gathered eye tracking data, one of the most common methods are heat maps. One of the reasons why heat maps are often used is that they are easy to produce. 
+A heat map can illustrate the number of fixations by coloring the most looked at points and parts of a website in a two-dimensional graph. Therefore, heat maps receive their name from the colors, which correspond to temperature. For example, red and yellow on the heat map portray the most frequently looked at points \autocite[]{bojko2009informative}. 
+
+As \textcite[]{bojko2009informative} explains in his paper, heat maps are not a solution for every task that is being recorded with an eye tracking device. \\
+For example, when heat maps are being used to test if an element is poorly placed on a website. To get more realistic and reliable results, it would be necessary to put the desired item in more than one areas of the website and then repeat the trial. However, this would lead to a comparison between the accumulated data and its heat map, which is also not a reliable source to interpret a user's behavior \autocite[]{bojko2009informative}. 
+
+In addition, according to the study of \textcite[]{djamasbi2010efficiency} comparing two heat maps is not possible because they are not standardized in the sense of fixation quantity. Although both heat maps illustrate the fixations that were recorded before, the number of the fixations may differ. Therefore two comparable heat maps must have the same amount of fixations to provide relevant results \autocite[]{djamasbi2010efficiency}. 
+
+Furthermore, heat maps are not always an excellent representation of eye tracking data, because the colors are very opaque to the point of not being able to see the original picture of the screen. To minimize this problem in a lot of studies the heat maps are turned into shadow maps where one is still able to see the picture behind the overlapped map \autocite[]{vspakov2007visualization}.
+
+
+\subsubsection{Area of interest map}
+An area of interest is a part of a website where plenty of fixations are recorded. To visualize and group them in the best way possible, a website can be divided into regions or areas of interest. These regions are either specific (e.g., items like buttons, pictures, ads) or rather global (e.g., top, middle, bottom of a webpage) \autocite[]{gonzalez2011different, djamasbi2014eye}. To gain more information about a website and how a user views it a fixation map and the areas of interest are combined. This resulting map provides a lot of information, for example, whether or not a specific part of a website is exciting. Furthermore, with the help of fixation timing, an AOI map can give information about the order in which the user views a webpage \autocite[]{djamasbi2014eye}.
+
+\subsubsection{Gaze plot}
+A third approach to visualizing eye-tracking data is using gaze plots. Similiar to the already mentioned heat maps and attention maps gaze plots also use information about a user's fixation \autocite[]{kurzhals2016gaze}. \textcite[]{kurzhals2016gaze} also mentions that gaze-points not only display fixations but also take scanpaths, alternating fixations and saccades, into account. 
+
+\selectlanguage{english}
+\begin{quote}
+``The spots on the gaze plot represent fixations, with larger spots representing longer fixations. The numbers in the spots represent the order of fixations and the lines indicate saccades.''
+\autocite[]{djamasbi2014eye}
+\end{quote}
+
+As a consequence, similar to heat maps, gaze plots have dots all over the place, and the whole view is clustered with them. Therefore the picture with all its items behind is not clearly visible anymore as \textcite[]{djamasbi2014eye} indicates in their paper.
+
+\subsubsection{Gaze stripes}
+And lastly, there is another method that is called gazed stripes and is imaged-based.
+
+\selectlanguage{english}
+\begin{quote}
+``The visualization with gaze stripes for multiple participants is based on two data sources: the visual stimulus that was investigated by the participants and the spatio-temporal point-based gaze information that was recorded by an eye tracker.''
+\autocite[3]{kurzhals2016gaze}
+\end{quote}
+
+\textcite[]{kurzhals2016gaze} introduce a new kind of visualization method. This method does not require pre-defined areas of interest because it uses the image around the gaze point. The method will work for static as well as dynamic sensory input.Furthermore, it will make it more accessible to interpret scanpaths. 
+However, this method brings one issue along. For example, if the used stimuli contain similar colors, it becomes hard to differentiate between the separate objects in the picture \autocite[]{kurzhals2016gaze}.
+
+
+\section{Application Case - Search Engine (SERPs)}
+\label{section:SearchEngine}
+General: what is a SERP etc.
+
+\subsection{Information Processing and SERP}
+\label{subsection:ReadingSERP}
+
+\subsection{Different Search Engines - different methods?}
+\label{subsection:SearchEngine}
+
+\subsubsection{Google}
+
+\subsubsection{Yahoo!}
+
+\subsubsection{Comparison: Google and Yahoo!}
+
+\section{Discussion}
+\label{section:Discussion}
+This is the Discussion
+
+\section{Conslusion}
+\label{section:Conclusion}
+CONCLUSIONCONCLUSION
