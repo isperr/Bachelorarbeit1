@@ -38,31 +38,28 @@ When it comes to online reading, eye tracking has been a helpful expedient to ga
 
 As a result, the following section will include the most popular technologies, parameters and accordingly the required visualization methods. 
 
-
-
-
 \subsection{Technologies}
 \label{subsection:Technologies}
+Eye tracking has been around for more than 100 years. And as \textcite[]{poole2006eye} is expressing in their paper eye tracking technology has evolved a lot over the several years.
+Accordingly, this next section will cover several essential facts and changes concerning eye tracking technology.
 
 \subsubsection{Head-mounted vs. remote}
 To record a subject's eye movements, there are two possible kinds of eye tracking devices available. The first one is called head-mounted. This kind of apparatus is placed on the subject's head and therefore always requires contact. 
 The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}.\\
 Although these two possibilities may sound like there is still room for improvement, the eye tracking devices have come a long way since the early beginnings. Earlier, direct contact with the cornea was necessary as \textcite[]{jacob2003eye} mention in their paper.
 
-
 \subsubsection{Infrared light - bright and dark pupil}
-While using a remote eye tracking device to record someone's eye movements, the camera most likely uses infrared light as an illuminator. Thus, the light hits the back of the eye which is also called the cornea. 
-Thus, the light hits the back of the eye which is also called the cornea. Moreover, the reason why the infrared light is used instead of any other light source is that it would distract the user while viewing the test material \autocite[]{poole2006eye}.
-The two most relevant arrangements are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the infrared light placed on a different axis as the camera recording the eye. That leads to the pupils being darker. 
-Sometimes these two methods can be used within the same eye tracking device which can lead to improved results \autocite[]{tobii2018dark, goldberg2002eye}.
+While using a remote eye tracking device to record someone's eye movements, the camera most likely uses infrared light as an illuminator. Thus, the light hits the front of the eye which is also called the cornea and afterward the back, the retina. 
+Moreover, the reason why the infrared light is used instead of any other light source is that it would distract the user while viewing the test material \autocite[]{poole2006eye, biedert2010eyebook}.
 
+The two most relevant techniques are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the infrared light placed on a different axis as the camera recording the eye. That leads to the pupils being darker. 
+Sometimes these two methods can be used within the same eye tracking device which can lead to improved results \autocite[]{tobii2018dark, goldberg2002eye}.
 
 \subsection{Parameters}
 \label{subsection:Parameters}
 When an eye tracking device records a subject's eye movements raw data, for example, gaze points can be collected. To extract valuable and applicable information out of the obtained raw data, \textcite[]{blascheck2014state}  suggests to aggregate it into fixations and saccades. 
 Nowadays those are the two most commonly used parameters.
 Thus, this section will provide a brief overview of the most essential and relevant parameters.
-
 
 \subsubsection{Fixations}
 A fixation is understood as a steady gaze at one point \autocite[]{buscher2009you}.  In the context of reading \textcite[]{beymer2007eye} suggests fixations are moments where the gaze is paused on a word or a group of words. 
@@ -102,7 +99,6 @@ The first approach for visualizing data are commonly used methods in statistics.
 As \textcite[]{blascheck2014state} states in her paper, these statistical approaches are not exclusively constructed for eye tracking data. There are the three following alternatives to visualize the data: line chart, bar chart and scatter plot. The first one is the line chart which mostly displays mini-movements, slides, saccades or the mean time of fixations. The second is a bar chart which is typically used in the form of a histogram where the mean fixation duration is portrayed. And the third and last one is called a scatter plot which often illustrates saccadic movements \autocite[]{blascheck2014state}.
 As mentioned before, these three graphs are not explicitly made to visualize eye-tracking data, therefore not the best option to visualize these specific results.
 
-
 \subsubsection{Heat maps}
 Secondly, when it comes to visualizing the results of the gathered eye tracking data, one of the most common methods are heat maps. One of the reasons why heat maps are often used is that they are easy to produce. 
 A heat map can illustrate the number of fixations by coloring the most looked at points and parts of a website in a two-dimensional graph. Therefore, heat maps receive their name from the colors, which correspond to temperature. For example, red and yellow on the heat map portray the most frequently looked at points \autocite[]{bojko2009informative}. 
@@ -113,7 +109,6 @@ For example, when heat maps are being used to test if an element is poorly place
 In addition, according to the study of \textcite[]{djamasbi2010efficiency} comparing two heat maps is not possible because they are not standardized in the sense of fixation quantity. Although both heat maps illustrate the fixations that were recorded before, the number of the fixations may differ. Therefore two comparable heat maps must have the same amount of fixations to provide relevant results \autocite[]{djamasbi2010efficiency}. 
 
 Furthermore, heat maps are not always an excellent representation of eye tracking data, because the colors are very opaque to the point of not being able to see the original picture of the screen. To minimize this problem in a lot of studies the heat maps are turned into shadow maps where one is still able to see the picture behind the overlapped map \autocite[]{vspakov2007visualization}.
-
 
 \subsubsection{Area of interest map}
 An area of interest is a part of a website where plenty of fixations are recorded. To visualize and group them in the best way possible, a website can be divided into regions or areas of interest. These regions are either specific (e.g., items like buttons, pictures, ads) or rather global (e.g., top, middle, bottom of a webpage) \autocite[]{gonzalez2011different, djamasbi2014eye}. To gain more information about a website and how a user views it a fixation map and the areas of interest are combined. This resulting map provides a lot of information, for example, whether or not a specific part of a website is exciting. Furthermore, with the help of fixation timing, an AOI map can give information about the order in which the user views a webpage \autocite[]{djamasbi2014eye}.
@@ -140,7 +135,6 @@ And lastly, there is another method that is called gazed stripes and is imaged-b
 
 \textcite[]{kurzhals2016gaze} introduce a new kind of visualization method. This method does not require pre-defined areas of interest because it uses the image around the gaze point. The method will work for static as well as dynamic sensory input.Furthermore, it will make it more accessible to interpret scanpaths. 
 However, this method brings one issue along. For example, if the used stimuli contain similar colors, it becomes hard to differentiate between the separate objects in the picture \autocite[]{kurzhals2016gaze}.
-
 
 \section{Application Case - Search Engine (SERPs)}
 \label{section:SearchEngine}
