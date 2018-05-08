@@ -55,6 +55,16 @@ Moreover, the reason why the infrared light is used instead of any other light s
 The two most relevant techniques are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the infrared light placed on a different axis as the camera recording the eye. That leads to the pupils being darker. 
 Sometimes these two methods can be used within the same eye tracking device which can lead to improved results \autocite[]{tobii2018dark, goldberg2002eye}.
 
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/DarkBright.png}
+	\caption{
+		Dark and Bright Pupil Method
+	}
+	%for reference to this figure
+	\label{figure:DarkBright}
+\end{figure}
+
 \subsection{Parameters}
 \label{subsection:Parameters}
 When an eye tracking device records a subject's eye movements raw data, for example, gaze points can be collected. To extract valuable and applicable information out of the obtained raw data, \textcite[]{blascheck2014state}  suggests to aggregate it into fixations and saccades. 
@@ -96,14 +106,14 @@ Once the eye movements of a person got recorded, the raw eye tracking data can b
 
 \subsubsection{Statistical visualization approach}
 The first approach for visualizing data are commonly used methods in statistics. Raw eye tracking is primarily nothing more than mathematical coordinates. In addition to that, the raw data can contain information about the position of a user's head \autocite[]{bruneau2002eyes, biedert2010eyebook, kurzhals2016gaze}. 
-As \textcite[]{blascheck2014state} states in her paper, these statistical approaches are not exclusively constructed for eye tracking data. There are the three following alternatives to visualize the data: line chart, bar chart and scatter plot. The first one is the line chart which mostly displays mini-movements, slides, saccades or the mean time of fixations. The second is a bar chart which is typically used in the form of a histogram where the mean fixation duration is portrayed. And the third and last one is called a scatter plot which often illustrates saccadic movements \autocite[]{blascheck2014state}.
+As \textcite[]{blascheck2014state} states in their paper, these statistical approaches are not exclusively constructed for eye tracking data. There are the three following alternatives to visualize the data: line chart, bar chart and scatter plot. The first one is the line chart which mostly displays mini-movements, slides, saccades or the mean time of fixations. The second is a bar chart which is typically used in the form of a histogram where the mean fixation duration is portrayed. And the third and last one is called a scatter plot which often illustrates saccadic movements \autocite[]{blascheck2014state}.
 As mentioned before, these three graphs are not explicitly made to visualize eye-tracking data, therefore not the best option to visualize these specific results.
 
 \subsubsection{Heat maps}
 Secondly, when it comes to visualizing the results of the gathered eye tracking data, one of the most common methods are heat maps. One of the reasons why heat maps are often used is that they are easy to produce. 
 A heat map can illustrate the number of fixations by coloring the most looked at points and parts of a website in a two-dimensional graph. Therefore, heat maps receive their name from the colors, which correspond to temperature. For example, red and yellow on the heat map portray the most frequently looked at points \autocite[]{bojko2009informative}. 
 
-As \textcite[]{bojko2009informative} explains in his paper, heat maps are not a solution for every task that is being recorded with an eye tracking device. \\
+As \textcite[]{bojko2009informative} explains in their paper, heat maps are not a solution for every task that is being recorded with an eye tracking device. \\
 For example, when heat maps are being used to test if an element is poorly placed on a website. To get more realistic and reliable results, it would be necessary to put the desired item in more than one areas of the website and then repeat the trial. However, this would lead to a comparison between the accumulated data and its heat map, which is also not a reliable source to interpret a user's behavior \autocite[]{bojko2009informative}. 
 
 In addition, according to the study of \textcite[]{djamasbi2010efficiency} comparing two heat maps is not possible because they are not standardized in the sense of fixation quantity. Although both heat maps illustrate the fixations that were recorded before, the number of the fixations may differ. Therefore two comparable heat maps must have the same amount of fixations to provide relevant results \autocite[]{djamasbi2010efficiency}. 
@@ -136,21 +146,43 @@ And lastly, there is another method that is called gazed stripes and is imaged-b
 \textcite[]{kurzhals2016gaze} introduce a new kind of visualization method. This method does not require pre-defined areas of interest because it uses the image around the gaze point. The method will work for static as well as dynamic sensory input.Furthermore, it will make it more accessible to interpret scanpaths. 
 However, this method brings one issue along. For example, if the used stimuli contain similar colors, it becomes hard to differentiate between the separate objects in the picture \autocite[]{kurzhals2016gaze}.
 
-\section{Application Case - Search Engine (SERPs)}
+\section{Application Case - Search Engine (Search Engine Result Pages)}
 \label{section:SearchEngine}
-General: what is a SERP etc.
+This following chapter will discuss the previously collected knowledge concerning information processing and eye tracking. Furthermore, search engines and the associated result pages will be taken into account as one of many possible application cases when it comes using eye tracking as a research method.
 
 \subsection{Information Processing and SERP}
 \label{subsection:ReadingSERP}
+When it comes to search engines, there has been done a lot of research to optimize the presentation of the results that are shown on the result page.  In order to enhance the user's experience, display the most appropriate and relevant links at the top, and adjust the SERP as good as possible, it is essential to understand how the user observes the result page \autocite{buscher2010good, liu2015influence}.
+
+For the longest time, displaying webpages as the results is a search engine's most important purpose. Besides, a search engine also presents advertisements, maps, images, videos, news and more results on their search engine result page. Nowadays, when mainly considering the links to webpages and their corresponding abstracts, which is the first page a user sees after entering a query and also the main result page of the search engine, a SERP is essentially built the same way as seen in Figure \ref{figure:ModernSerp}. 
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.75\linewidth]{images/SERP_wang2016beyond.png}
+	\caption{
+		Example of a modern Search Engine Result Page
+	}
+	%for reference to this figure
+	\label{figure:ModernSerp}
+\end{figure}
+
+
+The result page contains elements like the search bar and button, ads with links and abstracts, fundamental links to webpages that match the search query, pictures and links to videos \autocite{wang2016beyond}.
+A few years ago, SERPs were structured differently. Most importantly, the fundamental links to webpages were organized in the "ten blue links"-principle or "organic results" \autocite{lewandowski2015evaluating, liu2015influence, wang2016beyond}. The result-links are ranked based on relevance. Therefore the search engine makes estimations and evaluations itself, whether the user would find the shown results fitting or not. This process is also called the "probability ranking principle" \autocite{wang2016beyond}. This policy is reasonably justified because the user usually never looks further than the first suggested page out of the various recommended pages as \textcite{lewandowski2015evaluating} is explaining in their paper.
+
+One of the most prominent parts of the website is the section that includes pictures. Furthermore, the human eye tends to pay increased attention to images in comparison to plain text. When an eye tracking device is being used to record the user's eyes,  images get looked at more. This phenomenon is called the attention bias, more specifically the vertical bias.
+The same exact issue seems to appear with the before mentioned "ten blue links" that are summed up into a vertical result \autocite{wang2016beyond}.
+In contrast, \textcite{liu2015influence} explains in their paper that not all picture get the same amount of attention. In their study, they found that images that happen to be a part of a preview of news content get overlooked most of the times. Only images that are not directly attached to any kind of article or link get more attention \autocite{liu2015influence}.
 
 \subsection{Different Search Engines - different methods?}
 \label{subsection:SearchEngine}
+Google, Bing and Yahoo! are currently the most known and also most used search engines.Therefore this following section will look further into specific search engines, especially their methods and tools to present the best search engine result pages.
 
-\subsubsection{Google}
+\subsubsection{Google, Yahoo!, Bing}
 
-\subsubsection{Yahoo!}
+\subsubsection{Other search engines}
 
-\subsubsection{Comparison: Google and Yahoo!}
+\subsubsection{Comparison}
 
 \section{Discussion}
 \label{section:Discussion}
@@ -159,3 +191,6 @@ This is the Discussion
 \section{Conslusion}
 \label{section:Conclusion}
 CONCLUSIONCONCLUSION
+
+
+
