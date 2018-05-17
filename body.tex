@@ -24,44 +24,48 @@ This thesis will explore the usage of eye tracking in regard to the user experie
 
 \section{Eye Tracking}
 \label{section:EyeTracking}
-When an eye tracking device is being used, someone's eye movements are being recorded. This recorded material, raw eye tracking data, can be evaluated and the resulting parameters (e.g., fixation, saccades, regression, etc.) can be put into visualization graphs. Eye tracking can be a valuable tool in many application cases \autocite[]{goldberg2002eye, poole2006eye, beymer2007eye}.
+When an eye tracking device is being used, someone's eye movements are being recorded. This recorded material, the raw eye tracking data, can be evaluated and the resulting parameters (e.g., fixation, saccades, regression, etc.) can be summed up in visualization graphs \autocite[]{goldberg2002eye, poole2006eye, beymer2007eye}. Hence, eye tracking can be used as a valuable tool in many web application cases such as creating webpages, placing advertisements or arranging search engine result pages \autocite{buscher2009you, liu2015influence}. \textcite[]{buscher2009you} note in their paper that web developers can also profit from taking eye tracking study results into consideration when designing and styling their new websites. 
 
-\selectlanguage{english}
-\begin{quote}
-``Eye tracking has been used for nearly one hundred years in psychology.''
-\autocite[1]{schiessl2003eye}
-\end{quote}
-
-But psychology is not the only research field where an eye tracking device can be useful. \textcite[]{buscher2009you} note in their paper that web developers can also profit from taking eye tracking study results into consideration when designing and styling their new websites. 
-
-When it comes to online reading, eye tracking has been a helpful expedient to gain information on how the human brain processes information retrieved from a text \autocite[]{schiessl2003eye}.
+However, eye tracking is not only used for webpages. For instance, another outstanding application case is psychology, where the eye tracker is used to record the eye movements while doing any kind of information process, e.g. reading \autocite{schiessl2003eye}.
+Accordingly, when it comes to online reading, eye tracking has been a helpful expedient to gain information on how the human brain processes information retrieved from a text \autocite[]{schiessl2003eye}.
 As a result, the following section will include the most popular technologies, parameters and accordingly the required visualization methods. 
 
 \subsection{Technologies}
 \label{subsection:Technologies}
-Eye tracking has been around for more than 100 years. And as \textcite[]{poole2006eye} is expressing in their paper eye tracking technology has evolved a lot over the several years.
-Accordingly, this next section will cover several essential facts and changes concerning eye tracking technology.
+As \textcite[]{biedert2010eyebook} is expressing in their paper, eye tracking has been around for more than 100 years, and researchers gained a lot of important data. As a consequence, eye tracking technology as envolved a lot over these several years \autocite[]{poole2006eye}.
+For example, in the time since the first eye tracking devices have been invented, they have come a long way. In the early beginnings, direct contact with the cornea was necessary as \textcite[]{jacob2003eye} mention in their paper.
+Accordingly, this next section will cover several essential facts and changes when it comes to eye tracking technology.
 
 \subsubsection{Head-mounted vs. remote}
-To record a subject's eye movements, there are two possible kinds of eye tracking devices available. The first one is called head-mounted. This kind of apparatus is placed on the subject's head and therefore always requires contact. 
-The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}.\\
-Although these two possibilities may sound like there is still room for improvement, the eye tracking devices have come a long way since the early beginnings. Earlier, direct contact with the cornea was necessary as \textcite[]{jacob2003eye} mention in their paper.
+To record a subject's eye movements, there are two kinds of eye tracking devices available. The first one is called head-mounted. This kind of apparatus is placed on the subject's head and therefore always requires contact as seen in Figure \ref{figure:HeadMounted}. 
+The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{images/headmounted_goldberg2002eye.png}
+    \caption{
+        Head-mounted eye tracking device  \autocite[12]{goldberg2002eye}
+    }
+    %for reference to this figure
+    \label{figure:HeadMounted}
+\end{figure}
 
 \subsubsection{Infrared light -- bright and dark pupil}
 While using a remote eye tracking device to record someone's eye movements, the camera most likely uses infrared light as an illuminator. Thus, the light hits the front of the eye which is also called the cornea and afterward the back, the retina. 
 Moreover, the reason why the infrared light is used instead of any other light source is that it would distract the user while viewing the test material \autocite[]{poole2006eye, biedert2010eyebook}.
 
-The two most relevant techniques, as mentioned by \textcite[]{goldberg2002eye}, are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the illumination source placed on a different axis as the camera recording the eye. That leads to the pupils being darker (see Figure \ref{figure:DarkBright}). To gain improved results, these two methods can be used within the same eye tracking device \autocite[]{tobii2018dark, goldberg2002eye}.
+The two most known techniques, as mentioned by \textcite[]{goldberg2002eye}, are known as the bright and the dark pupil method. The bright pupil has the infrared placed in the same axis and ideally the same place as the camera. Therefore, the pupil is illuminated and brighter than the iris (this exact same effect leads to red eyes photos). The second method, dark pupil, has the illumination source placed on a different axis as the camera recording the eye. That leads to the pupils being darker (see Figure \ref{figure:DarkBright}). To gain improved results, these two methods can be used within the same eye tracking device \autocite[]{tobii2018dark, goldberg2002eye}. 
 
 \begin{figure}[!ht]
-	\centering
-	\includegraphics[width=1\linewidth]{images/DarkBright.png}
-	\caption{
-		Dark and Bright Pupil Method \autocite[]{tobii2018dark}
-	}
-	%for reference to this figure
-	\label{figure:DarkBright}
+    \centering
+    \includegraphics[width=1\linewidth]{images/DarkBright.png}
+    \caption{
+        Dark and Bright Pupil Method \autocite[]{tobii2018dark}
+    }
+    %for reference to this figure
+    \label{figure:DarkBright}
 \end{figure}
+
 
 \subsection{Parameters}
 \label{subsection:Parameters}
@@ -158,7 +162,7 @@ The result page contains elements like the search bar and button, advertisements
     \centering
     \includegraphics[width=1\linewidth]{images/SERP_wang2016beyond.png}
     \caption{
-        Example of a modern Search Engine Result Page \autocite[2]{wang2016beyond}
+        Example of a modern Search Engine Result Page \autocite[104]{wang2016beyond}.
     }
     %for reference to this figure
     \label{figure:ModernSerp}
