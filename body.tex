@@ -29,7 +29,7 @@ As a result, the following section will include the most popular technologies, p
 
 \subsection{Technologies}
 \label{subsection:Technologies}
-As \textcite[]{biedert2010eyebook} is expressing in their paper, eye tracking has been around for more than 100 years, and researchers gained a lot of important data. As a consequence, eye tracking technology as envolved a lot over these several years \autocite[]{poole2006eye}.
+As \textcite[]{biedert2010eyebook} is expressing in their paper, eye tracking has been around for more than 100 years, and researchers gained a lot of important data. As a consequence, eye tracking technology has evolved a lot over these several years \autocite[]{poole2006eye}.
 For example, in the time since the first eye tracking devices have been invented, they have come a long way. In the early beginnings, direct contact with the cornea was necessary as \textcite[]{jacob2003eye} mention in their paper.
 Accordingly, this next section will cover several essential facts and changes when it comes to eye tracking technology.
 
@@ -94,7 +94,7 @@ In the context of reading text on a website, a saccade is habitually a forward m
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.75\linewidth]{images/scanpath_djamasbi2014eye.png}
+    \includegraphics[width=1\linewidth]{images/scanpath_djamasbi2014eye.png}
     \caption{
        One possible way to visualize scanpaths \autocite[43]{djamasbi2014eye}
     }
@@ -108,16 +108,9 @@ Saccades are usually only forward movements, hence fast backward movements are c
 While reading a passage of a text, regressions are movements to the left of the line, mostly a few characters back, sometimes earlier words or occasionally even a whole sentence. Therefore \textcite[]{kruger2014subtitles} suggest in their paper that this could be an indicator of having troubles in processing the reading material or merely just oculomotor errors. Although most of the times the reader is not aware of those movements \autocite[]{reichle2003ez, biedert2010eyebook}.
 
 \subsubsection{Pupil size}
-One of the main reasons why someone's pupil size may change is increasing or decreasing illumination. For example, an eye tracking study can include videos or something else that is presented to the subject. If that happens, brightness may change very often in the shown material. As a consequence, the pupil size is constantly altering. To reestablish a more constant pupil size, the brightness of the room can be adjusted \autocite[]{goldberg2002eye}.
-
-\selectlanguage{english}
-\begin{quote}
-``Pupil dilation is a measure that is typically used to indicate an individual’s arousal or interest in the viewed content matter, with a larger diameter reflecting greater arousal.''
-\autocite[3]{joachims2017accurately}
-\end{quote}
-
-Some may argue that pupil dilation as a parameter can be an unreliable source. 
-Because not only the text but every little detail goes into one's reading experience. For example, sudden sounds in the surrounding area can play a part in one's change of pupil size when reading a text. 
+As \textcite{goldberg2002eye} is describing in their paper one of the main reasons why someone's pupil size may change is increasing or decreasing illumination. For example, an eye tracking study can include videos or something else that is presented to the subject. If that happens, brightness may change very often in the shown material. As a consequence, the pupil size is constantly altering. To reestablish a more constant pupil size, the brightness of the room can be adjusted \autocite[]{goldberg2002eye}.
+For example, the eye's pupil dilation can reveal whether the user finds interest in the website the look at or not. Hence, when the pupil is bigger, the user is also more interested as well as aroused, and when the pupil is smaller, the user does not find much interest in the material \autocite[]{joachims2017accurately}.\\
+It is disputed that pupil dilation as a parameter can be an unreliable source because not only the text, but every little detail goes into one's reading experience. For example, sudden sounds in the surrounding area can play a part in one's change of pupil size when reading a text. 
 Despite that, pupil dilation in a controlled environment, regarding time and space, can still say a lot about a user's experience on a website \autocite[]{bruneau2002eyes}.
 
 \subsection{Results and Visualization}
@@ -125,20 +118,30 @@ Despite that, pupil dilation in a controlled environment, regarding time and spa
 Once the eye movements of a person got recorded, the raw eye tracking data can be further processed. There are different methods to visualize the various eye tracking parameters. This following section will address today's most commonly used techniques and try to gauge which one is the most efficient.
 
 \subsubsection{Statistical visualization approach}
-The first approach for visualizing data are commonly used methods in statistics. Raw eye tracking is primarily nothing more than mathematical coordinates. In addition to that, the raw data can contain information about the position of a user's head \autocite[]{bruneau2002eyes, biedert2010eyebook, kurzhals2016gaze}. 
+The first approach for visualizing data are commonly used methods from statistics that are likewise used in eye tracking \autocite{blascheck2014state}. Raw eye tracking is primarily nothing more than mathematical or cartesian coordinates \autocite{blascheck2014state, biedert2010eyebook}. In addition to that, the raw data can contain information about the position of a user's head \autocite[]{biedert2010eyebook}. 
 As \textcite[]{blascheck2014state} states in their paper, these statistical approaches are not exclusively constructed for eye tracking data. There are the three following alternatives to visualize the data: line chart, bar chart and scatter plot. The first one is the line chart which mostly displays mini-movements, slides, saccades or the mean time of fixations. The second is a bar chart which is typically used in the form of a histogram where the mean fixation duration is portrayed. And the third and last one is called a scatter plot which often illustrates saccadic movements \autocite[]{blascheck2014state}.
-As mentioned before, these three graphs are not explicitly made to visualize eye-tracking data, therefore not the best option to visualize these specific results.
+As mentioned before, these three graphs are not explicitly made to visualize eye-tracking data, therefore they may not be the best option to visualize these specific results.  Although all three graphs (see Figure \ref{figure:Statistics}) represent the same set of data, eye tracking data can be represented in many different ways and may mislead. 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{images/statistics_blascheck2014state.png}
+    \caption{
+       Statistical representation of eye tracking data \autocite[7]{blascheck2014state}
+    }
+    %for reference to this figure
+    \label{figure:Statistics}
+\end{figure}
+
 
 \subsubsection{Heat maps}
-Secondly, when it comes to visualizing the results of the gathered eye tracking data, one of the most common methods are heat maps. One of the reasons why heat maps are often used is that they are easy to produce. 
+When it comes to visualizing the results of the gathered eye tracking data, one of the most common methods are heat maps. \textcite{bojko2009informative} state in their paper that one of the reasons why heat maps are often used is that they are simple to produce. 
 A heat map can illustrate the number of fixations by coloring the most looked at points and parts of a website in a two-dimensional graph. Therefore, heat maps receive their name from the colors, which correspond to temperature. For example, red and yellow on the heat map portray the most frequently looked at points \autocite[]{bojko2009informative}. 
 
-As \textcite[]{bojko2009informative} explains in their paper, heat maps are not a solution for every task that is being recorded with an eye tracking device. \\
+As \textcite[]{bojko2009informative} explains in their paper, heat maps are not a solution for every task that is being recorded with an eye tracking device. 
 For example, when heat maps are being used to test if an element is poorly placed on a website. To get more realistic and reliable results, it would be necessary to put the desired item in more than one areas of the website and then repeat the trial. However, this would lead to a comparison between the accumulated data and its heat map, which is also not a reliable source to interpret a user's behavior \autocite[]{bojko2009informative}. 
+In addition, according to the study of \textcite[]{djamasbi2010efficiency}, comparing two heat maps is not possible because they are not standardized in the sense of fixation quantity. Although both heat maps illustrate the fixations that were recorded before, the number of the fixations may differ. Therefore, two comparable heat maps must have the same amount of fixations to provide relevant results \autocite[]{djamasbi2010efficiency}. 
 
-In addition, according to the study of \textcite[]{djamasbi2010efficiency} comparing two heat maps is not possible because they are not standardized in the sense of fixation quantity. Although both heat maps illustrate the fixations that were recorded before, the number of the fixations may differ. Therefore, two comparable heat maps must have the same amount of fixations to provide relevant results \autocite[]{djamasbi2010efficiency}. 
-
-Furthermore, heat maps are not always an excellent representation of eye tracking data, because the colors are very opaque to the point of not being able to see the original picture of the screen. To minimize this problem in a lot of studies the heat maps are turned into shadow maps where one is still able to see the picture behind the overlapped map \autocite[]{vspakov2007visualization}.
+Furthermore, heat maps are not always an excellent representation of eye tracking data, because the colors are very opaque so that the original picture on the screen is not clearly visible anymore. To minimize this problem in a lot of studies the heat maps are turned into shadow maps where the image behind the overlapped map is still detectable \autocite[]{vspakov2007visualization}. Another alternative to avoid the opaqueness of heat maps are focus maps, where the important and more looked at points are visible and the rest of the picture is black \autocite{kruger2014subtitles}.
 
 \subsubsection{Area of interest map}
 An area of interest is a part of a website where plenty of fixations are recorded. To visualize and group them in the best way possible, a website can be divided into regions or areas of interest. These regions are either specific (e.g., items like buttons, pictures, ads) or rather global (e.g., top, middle, bottom of a webpage) \autocite[]{gonzalez2011different, djamasbi2014eye}. To gain more information about a website and how a user views it a fixation map and the areas of interest are combined. This resulting map provides a lot of information, for example, whether or not a specific part of a website is exciting. Furthermore, with the help of fixation timing, an AOI map can give information about the order in which the user views a webpage \autocite[]{djamasbi2014eye}.
