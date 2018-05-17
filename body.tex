@@ -1,10 +1,7 @@
 %for reference to this section
 \section{Introduction}
 \label{section:Introduction}
-Eye tracking is a method where someone's eyes and their movement are being recorded. Consequently, the measured results reveal where a person is looking at all times and how fast the eyes move between two points \autocite[]{poole2006eye}. To implement this, an eye tracking device is needed. There are two different kinds of eye tracking devices, head-mounted and remote. The first one gets placed on someone's head and requires contact. The second one is mostly put on top of or next to the computer screen. 
-Nowadays it is a common practice for web developers to use eye tracking as a tool to improve their applications, websites and its usability \autocite[]{buscher2009you}.\\
-
-This thesis will explore the usage of eye tracking in regard to the user experience for websites and web applications. Specifically, this paper will point out the advantages that come with using an eye tracker and the data that can be gained when it comes to information processing and search engines. 
+... will follow shortly ...
 
 \section{Reading}
 \label{section:Reading}
@@ -42,9 +39,9 @@ The second one, also called a remote device, does not require contact and for th
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=1\linewidth]{images/headmounted_goldberg2002eye.png}
+    \includegraphics[width=0.75\linewidth]{images/headmounted_goldberg2002eye.png}
     \caption{
-        Head-mounted eye tracking device  \autocite[12]{goldberg2002eye}
+        Example of a head-mounted eye tracking device \autocite[12]{goldberg2002eye}
     }
     %for reference to this figure
     \label{figure:HeadMounted}
@@ -69,20 +66,41 @@ The two most known techniques, as mentioned by \textcite[]{goldberg2002eye}, are
 
 \subsection{Parameters}
 \label{subsection:Parameters}
-When an eye tracking device records a subject's eye movements raw data, for example, gaze points can be collected. To extract valuable and applicable information out of the obtained raw data, \textcite[]{blascheck2014state}  suggests to aggregate it into fixations and saccades. 
-Nowadays those are the two most commonly used parameters.
-Thus, this section will provide a brief overview of the most essential and relevant parameters.
+When an eye tracking device records a subject's eye movements, raw data can be collected. For instance, the most common element can be gaze points, which are points that get visually focused by the human's eye \autocite{bojko2009informative, vspakov2007visualization}. To extract valuable and applicable information out of the obtained raw data, \textcite[]{blascheck2014state}  suggests to aggregate it into fixations and saccades. 
+Nowadays those are the two most commonly used parameters \autocite{bruneau2002eyes}. Thus, this section will provide a brief overview of the most essential and relevant parameters.
 
 \subsubsection{Fixations}
-A fixation is understood as a steady gaze at one point \autocite[]{buscher2009you}.  In the context of reading \textcite[]{beymer2007eye} suggests fixations are moments where the gaze is paused on a word or a group of words. 
-Normally a fixations duration lasts about 200-300 ms \autocite[]{kasneci2015online}. As stated by \textcite[]{buscher2009you}, to be considered a fixation the gaze must at least last 80-100 ms. Accordingly, during that time the brain can process the ingested information. Aside from that, the field where many foveal fixations take place is called an area of interest \autocite[]{djamasbi2014eye}.\\
-According to \textcite[]{grzyb2016eye} not all recorded fixations are also detected correctly by the user of a website. For instance \textcite[]{bruneau2002eyes} states in his paper, that not all eye movements seem to happen voluntarily. 
+A fixation is understood as a steady gaze at one point \autocite[]{buscher2009you}.  In the context of reading, as \textcite[]{beymer2007eye} annotate in their paper, fixations are moments where the gaze is paused on a word or a group of words. 
+Normally a fixations duration lasts about 200-300 ms \autocite[]{kasneci2015online}. As stated by \textcite[]{buscher2009you}, to be considered a fixation the gaze must at least last 80-100 ms. Accordingly, during that time the brain can process the ingested information. Aside from that, a field where many foveal fixations take place is called an area of interest (AOI) \autocite[]{djamasbi2014eye}. For example, a webpage can be divided into different areas of interest (see Figure \ref{figure:AOI}).  On the one hand, when specific AOI's are used, one area can be simply a picture or the heading of a webpage. On the other hand, using broad AOI's, the page gets partitioned into larger parts like heading, pictures and text \autocite{djamasbi2014eye}. \\
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/AOI_djamasbi2014eye.png}
+    \caption{
+        Webpage divided into areas of interest (AOI) \autocite[48]{djamasbi2014eye}
+    }
+    %for reference to this figure
+    \label{figure:AOI}
+\end{figure*}
+
+According to \textcite[]{grzyb2016eye}, when a user is looking at a website and an eye tracking device is set up, not all recorded fixations are detected correctly.
+For instance \textcite[]{bruneau2002eyes} states in his paper, that not all eye movements seem to happen voluntarily. 
 Despite the fact that fixations may not be an entirely flawless eye tracking parameter, \textcite[]{biedert2010eyebook} mention in their paper that information can only be correctly discovered with fixations.
 
-\subsubsection{Saccades}
-Another significant parameter is the saccade which is the counterpart to fixations. They are short and fast movements between two points, the before mentioned fixations. Saccades are the quickest movements the body is able to achieve and typically last 30 to 80 ms \autocite[]{blascheck2014state}. \\
-Furthermore, the scanpath is an important metric in terms of fixations and saccades. Scanpaths consist of alternating saccades and fixations. They reveal information about where the user looks first because scanpaths gives information in which order they look at what part of a website. Therefore, it can offer insights into a user's experience and additionally their behavior when they observe or interact with a website \autocite[]{lorigo2008eye, blascheck2014state}.\\
-In the context of reading on a website, a saccade is habitually a forward movement for around 8-12 characters in the text that is being read as \textcite[]{beymer2007eye} are explaining in their paper.
+\subsubsection{Saccades and Scanpaths}
+Another significant parameter is the saccade which is the counterpart to fixations \autocite{goldberg2002eye}. They are short and fast movements between two points, the before mentioned fixations \autocite{goldberg2002eye, beymer2007eye}. Saccades are the quickest movements the body is able to achieve and typically last 30 to 80 ms \autocite[]{blascheck2014state}. \\
+Furthermore, the scanpath is an important metric in terms of fixations and saccades. Scanpaths consist of alternating saccades and fixations. They reveal information about where the user looks first because scanpaths gives information in which order they look at what part of a website. Therefore, it can offer insights into a user's experience and additionally their behavior when they observe or interact with a website \autocite[]{lorigo2008eye, blascheck2014state}. Figure \ref{figure:Scanpath} shows scanpaths on a website, where the dots are the fixations and the lines are the saccades. \\
+In the context of reading text on a website, a saccade is habitually a forward movement for around 8-12 characters in the text that is being read as \textcite[]{beymer2007eye} are explaining in their paper.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/scanpath_djamasbi2014eye.png}
+    \caption{
+       One possible way to visualize scanpaths \autocite[43]{djamasbi2014eye}
+    }
+    %for reference to this figure
+    \label{figure:Scanpath}
+\end{figure}
 
 \subsubsection{Regressions}
 Saccades are usually only forward movements, hence fast backward movements are called regressions \autocite[]{reichle1998toward}. 
@@ -198,11 +216,11 @@ Google is by far the most used search engine, as \textcite{pan2007google} points
 
 \section{Discussion}
 \label{section:Discussion}
-This is the Discussion
+Discussion
 
-\section{Conslusion}
+\section{Conclusion}
 \label{section:Conclusion}
-CONCLUSIONCONCLUSION
+Conclusion
 
 
 
