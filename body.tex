@@ -6,15 +6,40 @@
 \section{Reading}
 \label{section:Reading}
 
+In the field of psychology, there has been done a lot of research in the last century about information processing, especially reading \autocite{rayner1998eye, biedert2010eyebook}. 
+To better understand the reader and adjust any kind of reading material or just a simple text as precise as possible for the reader, it is essential to understand the user's reading behavior \autocite{biedert2010eyebook}. 
+Therefore, this following section will include the most relevant information regarding the human's eye and its movements, information processing - in particular reading and individual differences or challenges that may appear when it comes to reading.
+
 \subsection{Eye}
 \label{subsection:Eye}
+As the eye is responsible for starting the mechanism of processing all kinds of visual stimuli from our environment, it is necessary to understand how the human eyes are structured and how they function. Accordingly, this following section will cover the eyes physiological architecture and the movements that the eyes execute.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/Eye_djamasbi2014eye.png}
+    \caption{
+       Structure of the eye \autocite[38]{djamasbi2014eye}
+    }
+    %for reference to this figure
+    \label{figure:Eye}
+\end{figure}
 
 \subsubsection{Physiological}
+The human eye (see Figure \ref{figure:Eye}) consists of various parts such as the cornea, lens, iris, fovea and retina \autocite{djamasbi2014eye}. When a human looks at an object, the first thing that happens is that the light reflects off of the object and hits the front section of the eye, the cornea. After that, the reflected light travels through the iris and lens and hits the back of the eye which is called the retina. Inside of the retina are the two visual receptors which are called the rods and the cones. These receptors are not evenly distributed. There are fewer cones, which deliver the best results in bright and illuminated environments, as they are especially and entirely responsible for distinguishing colors, acuity and identifying detail. Which means there exists a larger number of rods since their main purpose is to differentiate between grey shades and brightness and also identify movements. In contrast to the cones, rods function at its best when the environment is only slightly illumined \autocite{djamasbi2014eye, biedert2010eyebook}.
+When a beam of light hits retina, it most likely arrives at the foveal area, which is the part of the retina where most of the cones are located \autocite{djamasbi2014eye}. Consequently, the fovea is also partly responsible for precise vision \autocite{biedert2010eyebook}.
+Moreover, when the reflected light reached the back of the eye, the receptors convert the light signal into an electrical and neural signal. Through the nerves, this signal gets sent to the brain where it can be further processed \autocite{djamasbi2014eye}.
 
 \subsubsection{Movements}
+As \textcite{djamasbi2014eye} is explaining in their paper the best acuity, concerning seeing, occurs with the help of the fovea -- highest amount of cones. Outside of that area, the visual acuity decreases immensely. To compensate this disadvantages, the human eye automatically executes a lot of quick ballistic movements between to points. These fast movements are called saccades and regressions.
+Aside from that, when the eyes are not moving at such fast pace, the eyes mostly fixate on certain words, objects or areas.  However, \textcite{biedert2010eyebook} mentions in their paper that when the eye is fixated at a point, it can only ingest a limited amount of information in the surroundings.
 
 \subsection{Information Processing}
 \label{subsection:InformationProcessing}
+
+As \textcite{laberge1974toward} was already explaining in their paper, the skill of reading can be divided into different stages of information processing. There are steps when it comes to improving the reading skills over time primarily to become a better and ideally fluent reader. Nevertheless, the critical part is the action that happens during the reading process. For a fluent reader, the information processing happens within parts of a second.
+
+
+In their study, \textcite{buscher2009you} discovered that there is more information processed if a fixation point is looked at longer than average.
 
 \subsection{Differences between German and English}
 \label{subsection:Differences}
@@ -35,7 +60,8 @@ Accordingly, this next section will cover several essential facts and changes wh
 
 \subsubsection{Head-mounted vs. remote}
 To record a subject's eye movements, there are two kinds of eye tracking devices available. The first one is called head-mounted. This kind of apparatus is placed on the subject's head and therefore always requires contact as seen in Figure \ref{figure:HeadMounted}. 
-The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}.
+The second one, also called a remote device, does not require contact and for that reason, it is most commonly placed next to or on top of the computer screen where the desired content is being displayed \autocite[]{jacob2003eye, schiessl2003eye}. In this example (see Figure \ref{figure:HeadMounted}), the camera is integrated into the monitor right below the screen as well as the infrared light source. 
+To calibrate the camera correctly, a short process is necessary, where the user usually has to fixate points on different locations on the screen for a short period of time \autocite{biedert2010eyebook}.
 
 \begin{figure}[!ht]
     \centering
@@ -45,6 +71,16 @@ The second one, also called a remote device, does not require contact and for th
     }
     %for reference to this figure
     \label{figure:HeadMounted}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.75\linewidth]{images/remote_biedert2010eyebook.png}
+    \caption{
+        Modern example of an remote eye tracker \autocite[274]{biedert2010eyebook}
+    }
+    %for reference to this figure
+    \label{figure:Remote}
 \end{figure}
 
 \subsubsection{Infrared light -- bright and dark pupil}
@@ -94,7 +130,7 @@ In the context of reading text on a website, a saccade is habitually a forward m
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=1\linewidth]{images/scanpath_djamasbi2014eye.png}
+    \includegraphics[width=0.75\linewidth]{images/scanpath_djamasbi2014eye.png}
     \caption{
        One possible way to visualize scanpaths \autocite[43]{djamasbi2014eye}
     }
@@ -126,7 +162,7 @@ As mentioned before, these three graphs are not explicitly made to visualize eye
     \centering
     \includegraphics[width=1\linewidth]{images/statistics_blascheck2014state.png}
     \caption{
-       Satistical representation of eyetracking data \autocite[7]{blascheck2014state}
+       Statistical representation of eye tracking data \autocite[7]{blascheck2014state}
     }
     %for reference to this figure
     \label{figure:Statistics}
@@ -181,13 +217,13 @@ A third approach to visualizing eye-tracking data is using gaze plots. Similar t
     \label{figure:GazePlot}
 \end{figure}
 
-As seen in Figure \ref{figure:HeatAndGaze}, gaze plots are an ideal visualization method for scanpaths, therefore also for fixations and saccades. In a gaze plot, the points represent the fixations. The larger the point the longer that position was fixated by the user. The lines between those fixations points serve as a representation of the saccadic movements of the human's eyes \autocite[]{djamasbi2014eye}.
+As seen in Figure \ref{figure:GazePlot}, gaze plots are an ideal visualization method for scanpaths, therefore also for fixations and saccades. In a gaze plot, the points represent the fixations. The larger the point the longer that position was fixated by the user. The lines between those fixations points serve as a representation of the saccadic movements of the human's eyes \autocite[]{djamasbi2014eye}.
 As a consequence, similar to heat maps, gaze plots have dots all over the place, and the whole view is clustered with them. Therefore, the picture with all its items behind is often not clearly visible anymore as \textcite[]{djamasbi2014eye} indicates in their paper.
 
 \subsubsection{Gaze stripes}
-And lastly, there is another method that is called gaze stripes and is image-based. There are two input forms necessary for creating gaze stripes as \textcite{kurzhals2016gaze} is explaining in their paper. Firstly, there is the visual attention that gets examined by the user. And secondly, gaze stripes consist of the spatiotemporal information about coordinates the eye tracking device records \autocite{kurzhals2016gaze}.
+And lastly, there is another method that is called gaze stripes and is image-based. There are two input forms necessary for creating gaze stripes as \textcite{kurzhals2016gaze} is explaining in their paper. Firstly, there is the visual attention that gets examined by the user. And secondly, gaze stripes consist of the spatio-temporal information about coordinates the eye tracking device records \autocite{kurzhals2016gaze}.
 
-\textcite[]{kurzhals2016gaze} introduce a new kind of visualization method (see Figure \ref{figure:Gazestripes}. This method does not require pre-defined areas of interest because it uses the image around the gaze point. The method will work for static as well as dynamic sensory input. 
+\textcite[]{kurzhals2016gaze} introduce a new kind of visualization method (see Figure \ref{figure:GazeStripes}. This method does not require pre-defined areas of interest because it uses the image around the gaze point. The method will work for static as well as dynamic sensory input. 
 
 Furthermore, it will make it more accessible to interpret scanpaths. However, this method brings one issue along. For example, if the used stimuli contain similar colors, it becomes hard to differentiate between the separate objects in the picture \autocite[]{kurzhals2016gaze}.
 
@@ -205,7 +241,8 @@ Furthermore, it will make it more accessible to interpret scanpaths. However, th
 %SEARCH ENGINE - SEARCH ENGINE - SEARCH ENGINE - SEARCH ENGINE - SEARCH ENGINE - SEARCH ENGINE
 \section{Application Case - Search Engine (Search Engine Result Pages)}
 \label{section:SearchEngine}
-This following chapter will discuss the previously collected knowledge concerning information processing and eye tracking. Furthermore, search engines and the associated result pages will be taken into account as one of many possible application cases when it comes using eye tracking as a research method.
+This following chapter will discuss the previously collected knowledge concerning information processing and eye tracking. Furthermore, search engines and the associated search engine result pages will be taken into account as one of many possible application cases when it comes using eye tracking as a research method.
+
 \subsection{Information Processing and SERP}
 \label{subsection:ReadingSERP}
 When it comes to search engines, there has been done a lot of research to optimize the presentation of the results that are shown on the result page.  In order to enhance the user's experience, display the most appropriate and relevant links at the top, and adjust the SERP as good as possible, it is essential to understand how the user observes the result page \autocite{buscher2010good, liu2015influence}.
@@ -214,7 +251,7 @@ The result page contains elements like the search bar and button, advertisements
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=1\linewidth]{images/SERP_wang2016beyond.png}
+    \includegraphics[width=0.75\linewidth]{images/SERP_wang2016beyond.png}
     \caption{
         Example of a modern Search Engine Result Page \autocite[104]{wang2016beyond}.
     }
