@@ -1,11 +1,13 @@
 %for reference to this section
 \section{Introduction}
 \label{section:Introduction}
-... will follow shortly ...
+Eye tracking has been a valuable research method for over one hundred years \autocite{biedert2010eyebook}. Popular search engines like Google and Yahoo! also profit from that sort of research. When a user enters a query and afterward looks at the corresponding search engine result page (SERP), they mostly only pay attention to the first few results and probably do not look at the second recommended result page \autocite{lorigo2008eye, liu2015influence}.\\
+Therefore, the goal of this paper is to understand the user's viewing and reading behavior better. As a consequence, the user experience can be improved by adjusting the interface of the search engine result page. This will also allow the user to execute more efficient research tasks with the help of a search engine.\\
+This paper will look further into eye tracking to achieve the goal of improving SERPs. In particular, the essential eye tracking technologies, parameters and visualization methods to optimally illustrate the gathered results. Moreover, this paper will describe what a commonly used search engine nowadays looks like and how it can be improved.
+
 
 \section{Reading}
 \label{section:Reading}
-
 There has been done a lot of research, particularly in the field of psychology, in the last century about information processing, first and foremost reading \autocite{rayner1998eye, biedert2010eyebook}. 
 To better understand the reader and adjust any kind of reading material or just a simple text as accurate as possible to the reader, it is essential to understand the user's reading behavior \autocite{biedert2010eyebook}. 
 Therefore, this following section will include the most relevant information regarding the human's eye and its movements, information processing -- in particular reading -- and individual differences or challenges that may appear when it comes to reading.
@@ -218,7 +220,7 @@ A third approach to visualizing eye-tracking data is using gaze plots. Similar t
     \centering
     \includegraphics[width=1\linewidth]{images/GazePlot_gonzalez2011different.png}
     \caption{
-       Another example of heat maps and gaze plots arranged for the same queries \autocite[12]{gonzalez2011different}
+       Another example of gaze plots arranged for the same type of query \autocite[12]{gonzalez2011different}
     }
     %for reference to this figure
     \label{figure:GazePlot}
@@ -294,26 +296,31 @@ As \textcite{pan2007google, agrawal2015study} mention in their paper Google and 
 Google is by far the most used search engine, as \textcite{pan2007google} point out in their paper. The search engine receives more than 250 million queries a day and presents the appropriate results in the form of 25 billion web pages. In their article, they point out that people, but students primarily, tend to click on links and abstracts that are higher ranked, even though they are less relevant than the lower ranked ones. As a consequence, Google has the potential to influence our current society by presenting any kind of results and manipulate our way of information retrieval. During their study, they also found out, that Google works with the "ten blue links"-principle \autocite{pan2007google}.
 
 Nowadays, Yahoo! and Google work with similar search mechanisms but, as \textcite{weber2011search} explain in their paper, in the early beginnings of the internet Yahoo! was operating quite differently. 
-In the 1990's this search engine was built in a similar way to a telephone book or the Yellow Pages. Yahoo! was constructed like a catalog, where every single website was classified, accordingly placed into a category and listed in the catalog. As a result, after creating this catalog, the user was able to search for the desired information and find the correct websites. Since these categories were arranged by humans and not by a machine, this mechanism only works for a reasonable and therfore manageable amount of websites. Nowadays, this method may not even be considered a "real" search engine method, because it does not work with a Crawler for browsing the internet to find the desired data \autocite{weber2011search}.
+In the 1990's this search engine was built in a similar way to a telephone book or the Yellow Pages. Yahoo! was constructed like a catalog, where every single website was classified, accordingly placed into a category and listed in the catalog. As a result, after creating this catalog, the user was able to search for the desired information and find the correct websites. Since these categories were arranged by humans and not by a machine, this mechanism only works for a reasonable and therefore manageable amount of websites. Nowadays, this approach may not even be considered a "real" search engine method, because it does not work with a Crawler for browsing the internet to find the desired data \autocite{weber2011search}.
 
-
-\subsubsection{Other search engines}
-As mentioned before, nowadays commercial search engines like Google and Yahoo! are extremely popular. For the user, they are easy to handle because they have a user-friendly interface \autocite{pan2007google}.
-
-There has been done a lot of research on search engines, that conducted a study like \textcite{liu2015influence, buscher2010good} with an engine, that was adapted from a conventional commercial web search engine. 
-
+As mentioned before, nowadays commercial search engines like Google and Yahoo! are extremely popular. One of the reasons for their popularity, from the perspective of the user, is that they are easy to handle because they have a user-friendly interface \autocite{pan2007google}. 
+Although there has been done a lot of research on search engines, most of the conducted studies presented in papers like \textcite{liu2015influence, buscher2010good}, work with engines that are adapted from a conventional commercial web search engine. Therefore, most of the studies are based on the same search engine mechanisms.
 
 \subsubsection{Comparison and Eye Tracking results}
-As \textcite{pan2007google, wang2016beyond} are explaining in their paper, rank position of the results and the corresponding abstracts is one of the most noticeable and possibly most used comparison criteria when analyzing search engines. 
+As \textcite{pan2007google, wang2016beyond} are explaining in their paper, rank position of the results and the corresponding abstracts is one of the most prominent and possibly most used comparison criteria when analyzing search engines. 
 In their study \textcite{lorigo2008eye} Google and Yahoo! seem to deliver similar results. Since they provide similar interfaces (see Figure \ref{figure:ModernSerp}) and also use comparable algorithms, it is no surprise that users execute nearly the same viewing behavior for these both commercial search engines \autocite{lorigo2008eye}. 
 In general, users tend to look only at the first few links and abstracts on the SERP. Most of the times, the user will not look further than the first page presented to them. As a consequence users execute the longest fixations on the results ranked at position one and two\autocite{granka2004eye, lorigo2008eye}. Although Google's and Yahoo!'s SERP are very alike, there are still some small differences. For example, \textcite{lorigo2008eye} discovered that Google displays one more result than Yahoo! in an equal sized area on the screen. These are also the 5 or 6 results that the user sees without scrolling down \autocite{lorigo2008eye}. 
 This viewing behavior justifies letting the search engine decide to place more relevant results at the top, which is called the probability ranking principle \autocite{wang2016beyond}.
 
-Another criterion that is used to analyze and compare search engines is the "ten blue links"-principle, also called organic results, combined with attention bias \autocite{buscher2010good, liu2015influence}. There are a few different sections on a modern SERP (see Figure \ref{figure:ModernSerp}). Some of these segments contain pictures, which essentially draw more attention to them then solely plain text. 
+Another criterion that is used to analyze and compare search engines is the "ten blue links"-principle, also called organic results, combined with attention bias \autocite{buscher2010good, liu2015influence}. There are a few different sections on a modern SERP (see Figure \ref{figure:Serp}). Some of these segments contain pictures or ads, which essentially draw more attention to them then solely plain text. 
 However, \textcite{liu2015influence} found in their study, that verticals with only pictures attracted got looked at more than news content that also contained images. Therefore, there were more fixations recorded at the picture-only verticals. 
 Essentially, organic results in a vertical result get looked at more often \autocite{wang2016beyond}.
-Furthermore, \textcite{liu2015influence, buscher2010good} also discovered in their study, that the average user spends less time looking at organic results further down. In addition to that, there exists an attention bias with advertisements on search engine result pages. \textcite{buscher2010good} found in their study that AOI's containing ads attract approximately the same amount of attention as organic results ranked at position six to seven, where the user has to scroll down to completely see them.
+Furthermore, \textcite{liu2015influence, buscher2010good} also discovered in their study, that the average user spends less time looking at organic results further down. In addition to that, there exists an attention bias with advertisements on search engine result pages. \textcite{buscher2010good} found in their study that AOI's containing ads attract approximately the same amount of attention as organic results ranked at position six to seven, where the user has to scroll down to ultimately see them.
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1 \linewidth]{images/SERP_buscher2010good.png}
+    \caption{
+        Modern SERP that is overlapped with a heat map to represent the fixations executed by users \autocite[42]{buscher2010good}
+    }
+    %for reference to this figure
+    \label{figure:Serp}
+\end{figure}
 
 
 
@@ -323,7 +330,15 @@ Discussion
 
 \section{Conclusion}
 \label{section:Conclusion}
-Conclusion
+Since recording the user's eyes with an eye tracking device has been a helpful advantage for improving search engines, the primary focus lays on eye tracking \autocite{liu2015influence}. Therfore, in this paper, the most common eye tracking technologies, parameters and also visualization methods were presented. Furthermore, this paper discusses important conventions concerning modern commercial search engines. The goal was to get a better understanding of how the user looks at a search engine result page and processes the presented results \autocite{biedert2010eyebook}.
+
+As mentioned before, modern SERP's consist of several sections or verticals. Nowadays, these verticals can contain various potential distractions, such as pictures, video thumbnails or simply just advertisements.   
+Consequently, the user most of the times only looks at the result links and the associated abstracts. To be more accurate, the user hardly seems to look further than the first few links. Just in a few cases a person scrolls down, looks at the less relevant results, according to current algorithms, and maybe even looks at the second suggested page.
+Besides the organic results, most of the users tend to look at pictures for an increased amount of time to process the displayed information.
+To execute more efficient queries, a search engine should only display the organic results to avoid distractions and leave more space to explore more of the many suggested results.
+
+Most of the research that has been done is based on the same theories or hypotheses, and therefore also the same parameters and visualization methods. 
+Although a lot of research already exists, future research should include a broader range of parameters as a standard to examine search engines. Furthermore, it should include direct comparisons between popular commercial and non-commercial search engines.
 
 
 
